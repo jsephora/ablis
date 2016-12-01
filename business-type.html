@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>Business type | ABLIS</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    
+    <!-- BOOTSTRAP --><!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"> 
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta content="ABLIS | Business type" name="description">
+    <meta content="Australian business licence and information service" name="application-name">
+    
+    <!--[if lt IE 8]>
+        <script src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
+    <![endif]-->
+    <script>    /*@cc_on(function(e,i){i=e.length;while(i--)document.createElement(e[i])})("abbr,article,aside,audio,canvas,details,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(','))@*/
+    </script>
+</head>
+
+<body>
+<div id="fullwrap">
+    <div class="top-banner">
+        <div class="mobile-logo">
+            <a href="/"><strong>business</strong>.gov.au</a>
+        </div>
+    </div>
+    <header class="wrapper">
+        <div class="sub-brand">
+            <a href="index.html"><span>ABLIS</span></a>
+        </div>
+        <div class="gov">
+            <a href=
+            "http://www.business.gov.au"><span>business.gov.au</span></a>
+        </div>
+        <!-- nav id="settings">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href=
+                    "../business-registration/settings.html"><span>Profile</span></a>
+                    <div class="sub-nav">
+                        <ul class="sub-nav-group">
+                            <li>
+                                <a href="#">Set up save</a>
+                            </li>
+                            <li>
+                                <a href="#">Start a new application</a>
+                            </li>
+                            <li>
+                                <a href="#">Sign out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav -->
+    </header>
+
+    <main class="wrapper">
+    
+    	<div class="dashboard-message clearfix">
+			<div class="system-message-content">
+				<span class="disclaimer-heading">Demonstration site</span>
+				<p>Content is included as an example only and should not be used for business purposes. <br>Visit <a href="https://ablis.business.gov.au/pages/home.aspx" title="ABLIS live website" target="_blank">ablis.business.gov.au</a> for up to date information.</p>
+			</div>
+			<button type="button" class="closeSystemMessage">Dismiss</button>
+		</div>
+		
+        <div class="progress-container">
+            <div class="progress-steps">
+                <span id="progress-percent" style="width: 10%"></span>
+            </div><!-- meter -->
+            <ul class="section-nav-5">
+                <li class="active"><span>1</span><br>Business<br>type</li>
+                <li><span>2</span><br>Business<br>location</li>
+                <li><span>3</span><br>Business<br>operations</li>
+                <!-- li><span>4</span><br>Taxation<br>details</li -->
+                <li><span>4</span><br>Search<br>results</li>
+                <li><span>5</span><br>Save<br>checklist</li>
+            </ul>
+        </div><!-- progress-container -->
+        
+        <h1 id="heading" tabindex="-1"><span role=
+        "progressbar">(Step 1 of 5)<br></span>1. Business type</h1>
+
+        <div class="content-p">
+            <p>To help us identify what licences and permits you
+            might need, tell us what types of activities your business will do. For example, type "Cafe" and select "Cafe operation" or the most relevant business activities presented.</p>
+            <!-- p>Didn't find your business type? <a href="#"
+            target="_blank" title="Advanced search">Click here for more options.</a></p-->       
+        </div>
+        
+        <form action="/search/location" method="get">        
+			<div class="grid-container autocomplete-search" id="activities">
+                <div class="grid-row business-activity">					
+                    <input autocomplete="off" class="ui-autocomplete-input" type="text" name="BusinessActivityTitle" id="businessActivityTitle" placeholder="For example: cafe" aria-labelledby="business activity"/>
+                    <input type="hidden" name="BusinessActivityId" value="" />
+                </div>
+
+				<div class="grid-row business-activity-add margin-top-075 invisible">
+					<a id="linkAddActivity" href="javascript:void(0);">
+						<i class="fa fa-plus-circle" aria-hidden="true"></i>Add another activity
+					</a>
+				</div>
+			</div>
+
+
+            <div class="controls-container">
+                <div class="controls-content">
+                    <button class="btn" onclick="location.href='index.html'" type="button">Previous</button>
+                    <button class="btn btn-default next" onclick="location.href='business-location.html'" type="button">Next</button>
+                </div>
+                <!-- controls-content -->
+            </div>
+        </form>                                  
+    </main>
+    </div><!--fullwrap-->
+    <footer>
+        <div class="navigation-footer-legal">
+            <div class="row">
+                <div class="columns">
+                    <ul class="legal">
+                        <li>
+                            <a href="/about">About</a>
+                        </li>
+                        <li>
+                            <a href="/for-government">For Government</a>
+                        </li>
+                        <li>
+                            <a href="/legal-notices">Legal notices</a>
+                        </li>
+                        <li>
+                            <a href="/about/accessibility">Accessibility</a>
+                        </li>
+                        <li>
+                            <a href="/about/other-languages">Other
+                            languages</a>
+                        </li>
+                        <li>
+                            <a href=
+                            "https://www.business.gov.au/contact-us">Contact
+                            us</a>
+                        </li>
+                        <li>
+                            <a href=
+                            "https://www.business.gov.au/Forms/Feedback">Feedback</a>
+                        </li>
+                    </ul>
+                    <ul class="social">
+                        <li>
+                            <a class="facebook" href=
+                            "https://www.facebook.com/business.gov.au"><span class="fa fa-facebook-square">
+                            </span> <span class=
+                            "label show-for-sr">Facebook</span></a>
+                        </li>
+                        <li>
+                            <a class="twitter" href=
+                            "https://twitter.com/business_gov_au"><span class=
+                            "fa fa-twitter-square"></span> <span class=
+                            "label show-for-sr">Twitter</span></a>
+                        </li>
+                        <li>
+                            <a class="linkedin" href=
+                            "https://www.linkedin.com/company/department-of-innovation-industry-science-and-research">
+                            <span class="fa fa-linkedin-square"></span>
+                            <span class="label show-for-sr">LinkedIn</span></a>
+                        </li>
+                        <li>
+                            <a class="youtube" href=
+                            "https://www.youtube.com/user/BusinessGovAu"><span class="fa fa-youtube-square">
+                            </span> <span class=
+                            "label show-for-sr">Youtube</span></a>
+                        </li>
+                    </ul>
+                    <div class="bga-ftr-logo">
+                        <a href="/"><strong>business</strong>.gov.au</a>
+                    </div>
+                    <div class="footer-logo">
+                        <a href=
+                        "https://www.business.gov.au"><span>business.gov.au</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="https://www.business.gov.au/Forms/Feedback" class="feedback" target="_blank">Leave feedback</a>
+    </footer>
+ 
+ 
+   <!-- JQUERY AND JQUERY UI -->
+    <script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="assets/js/js.cookie.js"></script>
+    
+    <!-- BOOTSTRAP --><!-- Latest compiled and minified JavaScript -->
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    
+	<!-- JOEY'S CUSTOM JAVASCRIPT -->
+	<script type="text/javascript" src="assets/js/my-custom.js"></script>
+	
+    <!-- For the Business Type form to work -->
+    <script type="text/javascript">
+		// from here: https://ablis.dev.business.gov.au/search/activity/find/crab fishing
+        // from here: https://ablis.dev.business.gov.au/search/activity/find/cafe
+        // cooking
+        var data = [{ "Title": "Accommodation and Food Services \u003e Food and Beverage Services \u003e Cafes, Restaurants and Takeaway Food Services", "Groups": [{ "Title": "Cafes and Restaurants", "Results": [{ "Id": 3662, "Title": "Cafe operation" }, { "Id": 3663, "Title": "Restaurant operation" }] }, { "Title": "Takeaway Food Services", "Results": [{ "Id": 3667, "Title": "Takeaway food operation" }] }, { "Title": "Catering Services", "Results": [{ "Id": 3670, "Title": "Catering service operation" }] }] }, { "Title": "Education and Training \u003e Adult, Community and Other Education \u003e Adult, Community and Other Education", "Groups": [{ "Title": "Adult, Community and Other Education n.e.c.", "Results": [{ "Id": 5487, "Title": "Cooking school" }] }] }, { "Title": "Manufacturing \u003e Food Product Manufacturing \u003e Other Food Product Manufacturing", "Groups": [{ "Title": "Other Food Product Manufacturing n.e.c.", "Results": [{ "Id": 770, "Title": "Salt, cooking or table, manufacturing" }] }] }, { "Title": "Manufacturing \u003e Food Product Manufacturing \u003e Seafood Processing", "Groups": [{ "Title": "Seafood Processing", "Results": [{ "Id": 548, "Title": "Crustacean, processed, manufacturing (including cooked and/or frozen) n.e.c." }] }] }, { "Title": "Retail Trade \u003e Other Store-Based Retailing \u003e Electrical and Electronic Goods Retailing", "Groups": [{ "Title": "Electrical, Electronic and Gas Appliance Retailing", "Results": [{ "Id": 3424, "Title": "Cooking utensil, electric, retailing" }, { "Id": 3441, "Title": "Stove, retailing" }] }] }, { "Title": "Retail Trade \u003e Other Store-Based Retailing \u003e Furniture, Floor Coverings, Houseware and Textile Goods Retailing", "Groups": [{ "Title": "Houseware Retailing", "Results": [{ "Id": 3398, "Title": "Cooking utensil retailing (except electric)" }, { "Id": 3399, "Title": "Crockery retailing" }] }] }, { "Title": "Wholesale Trade \u003e Grocery, Liquor and Tobacco Product Wholesaling \u003e Grocery, Liquor and Tobacco Product Wholesaling", "Groups": [{ "Title": "Other Grocery Wholesaling", "Results": [{ "Id": 3168, "Title": "Cooking oil or fat wholesaling" }] }] }, { "Title": "Wholesale Trade \u003e Other Goods Wholesaling \u003e Furniture, Floor Covering and Other Goods Wholesaling", "Groups": [{ "Title": "Kitchen and Diningware Wholesaling", "Results": [{ "Id": 3252, "Title": "Cooking utensil wholesaling (except electric appliances)" }] }] }];
+        // cafe
+        //var data = [{ "Title": "Accommodation and Food Services \u003e Food and Beverage Services \u003e Cafes, Restaurants and Takeaway Food Services", "Groups": [{ "Title": "Cafes and Restaurants", "Results": [{ "Id": 3662, "Title": "Cafe operation" }] }, { "Title": "Takeaway Food Services", "Results": [{ "Id": 3666, "Title": "Mobile food van operation" }, { "Id": 3667, "Title": "Takeaway food operation" }] }] }];
+        // crab fishing
+        //var data = [{"Title":"Agriculture, Forestry and Fishing \u003e Aquaculture \u003e Aquaculture","Groups":[{"Title":"Offshore Caged Aquaculture","Results":[{"Id":5304,"Title":"Scalefish fishing"}]}]},{"Title":"Agriculture, Forestry and Fishing \u003e Fishing, Hunting and Trapping \u003e Fishing","Groups":[{"Title":"Rock Lobster and Crab Potting","Results":[{"Id":5501,"Title":"Blue crab fishing"},{"Id":290,"Title":"Crab fishing or potting"},{"Id":5500,"Title":"Mud crab fishing"}]},{"Title":"Prawn Fishing","Results":[{"Id":294,"Title":"Prawn fishing"},{"Id":295,"Title":"Scampi fishing"}]},{"Title":"Line Fishing","Results":[{"Id":297,"Title":"Bottom long line fishing"},{"Id":298,"Title":"Line fishing"},{"Id":301,"Title":"Surface long line fishing"}]},{"Title":"Other Fishing","Results":[{"Id":5503,"Title":"Demersal fishing"},{"Id":5508,"Title":"Fishing (other)"},{"Id":313,"Title":"Freshwater eel fishing"},{"Id":314,"Title":"Freshwater fishing n.e.c."},{"Id":5303,"Title":"Mackerel fishing"},{"Id":5504,"Title":"Mollusc fishing"},{"Id":5513,"Title":"Octopus fishing"},{"Id":5253,"Title":"Scallop fishing"},{"Id":5318,"Title":"Shellfish fishing"},{"Id":5255,"Title":"Undaria fishing"},{"Id":5252,"Title":"Wrasse fishing"}]}]}]
+
+        var options = {
+            source: function (request, response) {
+                response(data);
+            },
+            position: { my: "left top+8", at: "left bottom", collision: "none" },
+            minLength: 3,
+            search: function (event, ui) { },
+            select: function (event, ui) {
+                var element = $(event.target);
+                element.addClass("input-valid");
+                element.attr("data-selected-title", ui.item.value);
+                element.next("input").val(ui.item.id);
+
+                setAddLinkVisibility();
+            },
+            response: function (event, ui) { }
+        };
+
+        function setAddLinkVisibility() {
+            var count = $("#activities .business-activity").length;
+            var valid = $("#activities .input-valid").length;
+            if (valid === count) {
+                $("#activities .business-activity-add").removeClass("invisible");
+            } else {
+                $("#activities .business-activity-add").addClass("invisible");
+            }
+        }
+
+        function onBusinessActivityTitleKeyUp(event) {
+            var element = $(event.target);
+            if (element.attr("data-selected-title") !== element.val()) {
+                element.removeClass("input-valid");
+                element.next("input").val('');
+            }
+
+            setAddLinkVisibility();
+        }
+
+        function configureRemoveLink() {
+            $(".wrapper .business-activity a").click(function (event) {
+                $(event.target).parents(".grid-row").remove();
+                setAddLinkVisibility();
+            });
+        }
+
+        $(document).ready(function () {
+            $.widget("custom.autocompleteForBusinessActivity", $.ui.autocomplete, {
+                _create: function () {
+                    this._super();
+                    this.widget().menu("option", "items", "> :not(.business-activity-l1):not(.business-activity-l2)");
+                },
+                _renderMenu: function (ul, items) {
+                    var that = this;
+
+                    $.each(items, function (index, item) {
+                        ul.append("<li class='business-activity-l1'>" + item.Title + "</li>");
+                        $.each(item.Groups, function (index1, item1) {
+                            ul.append("<li class='business-activity-l2'>" + item1.Title + "</li>");
+
+                            $.each(item1.Results, function (index2, item2) {
+                                var li = that._renderItemData(ul, { id: item2.Id, value: item2.Title, label: item2.Title });
+                                li.attr("aria-label", item.Title + " > " + item1.Title + " > " + item2.Title);
+                            });
+                        });
+                    });
+                }
+            });
+
+            $(".wrapper input[name='BusinessActivityTitle']").keyup(onBusinessActivityTitleKeyUp);
+
+            $(".business-activity-add a").click(function (event) {
+                var element = $(event.target);
+                element.parent().before(
+                    '<div class="grid-row business-activity">' +
+                    '<input type="text" name="BusinessActivityTitle" id="BusinessActivityTitle" placeholder="For example: cafe" />' +
+                    '<input type="hidden" name="BusinessActivityId" />' +
+                    '<a href="javascript:void(0);"><i class="fa fa-trash-o" aria-hidden="true"></i></a>' +
+                    '</div>'
+                );
+
+                $(".wrapper input[name='BusinessActivityTitle']").last().autocompleteForBusinessActivity(options);
+                $(".wrapper input[name='BusinessActivityTitle']").last().keyup(onBusinessActivityTitleKeyUp);
+
+                configureRemoveLink();
+                setAddLinkVisibility();
+            });
+
+            configureRemoveLink();
+            $(".wrapper input[name='BusinessActivityTitle']").autocompleteForBusinessActivity(options);
+
+            $("button[type='submit']").click(function (event) {
+                $("input").each(function () {
+                    var input = $(this);
+                    if (input.val().trim() === "") {
+                        input.attr("disabled", "disabled");
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
